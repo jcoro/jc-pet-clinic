@@ -1,4 +1,4 @@
-package net.coronite.jcpetclinic;
+package jcpetclinic;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
