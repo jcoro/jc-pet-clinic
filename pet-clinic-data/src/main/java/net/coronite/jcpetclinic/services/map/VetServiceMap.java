@@ -1,11 +1,11 @@
 package net.coronite.jcpetclinic.services.map;
 
 import net.coronite.jcpetclinic.model.Vet;
-import net.coronite.jcpetclinic.services.CrudService;
+import net.coronite.jcpetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
