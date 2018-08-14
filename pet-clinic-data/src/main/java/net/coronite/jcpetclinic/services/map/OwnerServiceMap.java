@@ -2,6 +2,7 @@ package net.coronite.jcpetclinic.services.map;
 
 import net.coronite.jcpetclinic.model.Owner;
 import net.coronite.jcpetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
