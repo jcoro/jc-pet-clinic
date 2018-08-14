@@ -2,9 +2,11 @@ package net.coronite.jcpetclinic.services.map;
 
 import net.coronite.jcpetclinic.model.Pet;
 import net.coronite.jcpetclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {

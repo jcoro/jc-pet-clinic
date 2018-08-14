@@ -4,8 +4,7 @@ import net.coronite.jcpetclinic.model.Owner;
 import net.coronite.jcpetclinic.model.Vet;
 import net.coronite.jcpetclinic.services.OwnerService;
 import net.coronite.jcpetclinic.services.VetService;
-import net.coronite.jcpetclinic.services.map.OwnerServiceMap;
-import net.coronite.jcpetclinic.services.map.VetServiceMap;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -15,9 +14,10 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    @Autowired
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override

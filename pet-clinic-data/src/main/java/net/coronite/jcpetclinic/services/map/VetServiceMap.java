@@ -2,9 +2,11 @@ package net.coronite.jcpetclinic.services.map;
 
 import net.coronite.jcpetclinic.model.Vet;
 import net.coronite.jcpetclinic.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
