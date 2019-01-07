@@ -1,7 +1,7 @@
 package net.coronite.jcpetclinic.services.map;
 
 import net.coronite.jcpetclinic.model.Specialty;
-import net.coronite.jcpetclinic.services.SpecialtiesService;
+import net.coronite.jcpetclinic.services.SpecialtyService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
@@ -13,7 +13,7 @@ import java.util.Set;
  **/
 
 @Service
-public class SpecialtyMapService extends AbstractMapService<Specialty, Long> implements SpecialtiesService {
+public class SpecialtyMapService extends AbstractMapService<Specialty, Long> implements SpecialtyService {
     @Override
     public Set<Specialty> findAll() {
         return super.findAll();
